@@ -1,15 +1,15 @@
 /* CABECERA PRINCIPAL */
 .top-header {
-  font-family: "Nunito", sans-serif;
-  /*position: fixed; /* Mantiene el menú fijo en la parte superior */
-  background-color: #e3dad2; /* Fondo blanco para visibilidad */
-  width: 100%; /* Ocupa 95% del ancho de la pantalla */
-  z-index: 100; /* Se asegura de estar por encima de otros elementos */
-  height: 5.5rem; /* Altura fija del menú (80px aprox.) */
+  font-family: "Nunito", sans-serif; /* Fuente principal para la cabecera */
+  /* position: fixed; /* Mantiene el menú fijo en la parte superior */
+  background-color: #e3dad2; /* Fondo beige claro para visibilidad */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 100; /* Asegura que la cabecera esté por encima de otros elementos */
+  height: 5.5rem; /* Altura fija de la cabecera */
   display: flex; /* Activa Flexbox para alinear los elementos internos */
-  align-items: center; /* Centrado vertical */
-  justify-content: space-between; /* Separación entre logo y menú */
-  padding: 0 1.2rem; /* Espacio horizontal interno del menú */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Separa los elementos (logo y menú) horizontalmente */
+  padding: 0 1.2rem; /* Espaciado interno horizontal */
   justify-content: center; /* Centrado general horizontal */
   box-shadow: none; /* Elimina cualquier sombra */
   border-bottom: none; /* Elimina cualquier borde inferior */
@@ -17,212 +17,214 @@
 
 /* CONTENEDOR INTERNO */
 .contenedor-header {
-  width: 100%;
-  max-width: 1200px;
-  display: flex; /* Flex interno para distribuir logo, menú y botón */
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  flex-wrap: nowrap;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Limita el ancho máximo a 1200px */
+  display: flex; /* Activa Flexbox para organizar los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Separa los elementos con espacio entre ellos */
+  position: relative; /* Posición relativa para manejar elementos internos */
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en varias líneas */
 }
 
 /* LOGO */
 .logo img {
-  margin-right: 10rem;
-  width: 10rem;
-  height: auto;
+  margin-right: 10rem; /* Espacio a la derecha del logo */
+  width: 10rem; /* Ancho fijo del logo */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
 .menu-toggle {
-  display: none; /* Oculto por defecto */
-  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  display: none; /* Oculta el botón por defecto (se muestra en pantallas pequeñas) */
+  font-size: 2rem; /* Tamaño del ícono del botón */
   background: none; /* Sin fondo */
   border: none; /* Sin bordes */
-  cursor: pointer; /* Manito al pasar el mouse */
-  margin-right: 1rem; /* Espacio entre el borde derecho */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+  margin-right: 1rem; /* Espacio a la derecha del botón */
 }
 
 /* MENÚ PRINCIPAL HORIZONTAL */
 .menu-horizontal {
-  list-style: none; /* Quita los bullets */
-  display: flex; /* Muestra en fila horizontal */
-  justify-content: center; /* Centrado del contenido del menú */
-  align-items: center;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  list-style: none; /* Elimina los bullets de la lista */
+  display: flex; /* Organiza los elementos en fila horizontal */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 1.5rem; /* Espaciado entre los elementos del menú */
+  margin: 0; /* Elimina el margen externo */
+  padding: 0; /* Elimina el padding interno */
+  position: relative; /* Posición relativa para manejar submenús */
 }
 
 /* ENLACES DEL MENÚ */
 .menu-horizontal li a {
-  font-size: 18px;
-  font-family: "Nunito", sans-serif;
-  display: block;
-  padding: 0.5rem 1.25rem;
-  color: #333 !important;
-  text-decoration: none;
-  font-weight: 700;
-  position: relative;
-  overflow: hidden;
-  border-radius: 1.5rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  z-index: 1;
+  font-size: 18px; /* Tamaño de fuente de los enlaces */
+  font-family: "Nunito", sans-serif; /* Fuente principal */
+  display: block; /* Hace que el enlace ocupe todo el área disponible */
+  padding: 0.5rem 1.25rem; /* Espaciado interno del enlace */
+  color: #333 !important; /* Color del texto */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: 700; /* Negrita para los enlaces */
+  position: relative; /* Posición relativa para efectos */
+  overflow: hidden; /* Oculta contenido que se salga del área del enlace */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para color y fondo */
+  z-index: 1; /* Asegura que el enlace esté por encima de otros elementos */
 }
 
 /* Efecto brillo SOLO para los enlaces normales */
 .menu-horizontal li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
+  content: ""; /* Elemento vacío para el efecto */
+  position: absolute; /* Posición absoluta para cubrir todo el enlace */
+  top: 0; /* Alineado en la parte superior */
+  left: -100%; /* Comienza fuera del área visible */
+  width: 100%; /* Ocupa todo el ancho del enlace */
+  height: 100%; /* Ocupa toda la altura del enlace */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0)
-  );
-  transform: skewX(-20deg);
-  transition: left 0.5s ease-in-out;
-  z-index: 0;
-  pointer-events: none;
-  border-radius: inherit; /* redondeado suave */
+  ); /* Gradiente para el efecto de brillo */
+  transform: skewX(-20deg); /* Inclina el gradiente */
+  transition: left 0.5s ease-in-out; /* Transición suave para el movimiento */
+  z-index: 0; /* Coloca el efecto detrás del texto */
+  pointer-events: none; /* Evita que interfiera con el mouse */
+  border-radius: inherit; /* Hereda los bordes redondeados del enlace */
 }
 
 /* HOVER de enlaces normales */
 .menu-horizontal li a:hover {
-  background-color: #c7b8ae;
-  color: #ffffff !important;
+  background-color: #c7b8ae; /* Cambia el fondo al pasar el mouse */
+  color: #ffffff !important; /* Cambia el color del texto al blanco */
 }
 
 .menu-horizontal li a:hover::before {
-  left: 100%;
+  left: 100%; /* Mueve el efecto de brillo hacia la derecha */
 }
 
 /* Si el enlace tiene la clase btn-cuenta, anulamos el brillo anterior */
+.menu-horizontal li a.btn-cuenta::before {
+  display: none !important; /* Oculta el efecto de brillo */
+}
 
 /* SUBMENÚ VERTICAL OCULTO POR DEFECTO */
 .menu-vertical {
   display: none; /* Oculto por defecto */
   position: absolute; /* Posición relativa al padre */
-  background-color: rgb(255, 255, 255);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: auto;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255); /* Fondo blanco */
+  list-style: none; /* Sin bullets */
+  padding: 0; /* Sin padding interno */
+  margin: 0; /* Sin margen externo */
+  width: auto; /* Ancho automático */
+  border-radius: 1rem; /* Bordes redondeados */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  z-index: 2; /* Asegura que el submenú esté encima de otros elementos */
 }
 
 .menu-horizontal li:hover .menu-vertical {
-  display: block; /* Se muestra al pasar el mouse */
+  display: block; /* Muestra el submenú al pasar el mouse */
 }
 
 .menu-vertical li a {
-  position: relative;
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #000000;
-  text-decoration: none;
-  background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  margin: 0.25rem 0.5rem;
-  white-space: nowrap;
-  z-index: 1;
-  white-space: nowrap; /* evita el salto de línea */
-  box-sizing: border-box;
-  min-width: 20rem;
+  position: relative; /* Posición relativa para efectos */
+  display: inline-block; /* Muestra los enlaces en línea */
+  padding: 0.75rem 1.25rem; /* Espaciado interno */
+  font-size: 1.1rem; /* Tamaño de fuente */
+  font-weight: 600; /* Negrita */
+  color: #000000; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  background-color: transparent; /* Fondo transparente */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  overflow: hidden; /* Oculta contenido que se salga del área del enlace */
+  margin: 0.25rem 0.5rem; /* Margen entre enlaces */
+  white-space: nowrap; /* Evita el salto de línea */
+  box-sizing: border-box; /* Incluye padding y bordes en el tamaño */
+  min-width: 20rem; /* Ancho mínimo del enlace */
 }
 
 .menu-vertical li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 150%;
-  height: 100%;
+  content: ""; /* Elemento vacío para el efecto */
+  position: absolute; /* Posición absoluta para cubrir todo el enlace */
+  top: 0; /* Alineado en la parte superior */
+  left: -75%; /* Comienza fuera del área visible */
+  width: 150%; /* Ocupa más del ancho del enlace */
+  height: 100%; /* Ocupa toda la altura del enlace */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0)
-  );
-  transform: skewX(-20deg);
-  transition: left 0.5s ease-in-out;
-  z-index: 0;
-  pointer-events: none;
+  ); /* Gradiente para el efecto de brillo */
+  transform: skewX(-20deg); /* Inclina el gradiente */
+  transition: left 0.5s ease-in-out; /* Transición suave para el movimiento */
+  z-index: 0; /* Coloca el efecto detrás del texto */
+  pointer-events: none; /* Evita que interfiera con el mouse */
 }
 
 .menu-vertical li a:hover {
-  background-color: #c7b8ae; /* Más oscuro que #E3DAD2 */
-  color: #ffffff;
+  background-color: #c7b8ae; /* Cambia el fondo al pasar el mouse */
+  color: #ffffff; /* Cambia el color del texto al blanco */
 }
 
 .menu-vertical li a:hover::before {
-  left: 100%;
-}
-
-.menu-horizontal li a.btn-cuenta::before {
-  display: none !important;
+  left: 100%; /* Mueve el efecto de brillo hacia la derecha */
 }
 
 /* BOTÓN "MI CUENTA" */
 .btn-cuenta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  background-color: #ff7a79;
-  color: #ffffff !important;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.6rem 1.25rem !important;
-  border-radius: 40px !important;
-  border: none;
-  overflow: hidden;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  margin-top: 6px;
+  display: inline-flex; /* Muestra el botón como un contenedor flexible en línea */
+  align-items: center; /* Centra verticalmente el contenido dentro del botón */
+  justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
+  gap: 0.75rem; /* Espaciado entre los elementos internos (ícono y texto) */
+  background-color: #ff7a79; /* Color de fondo del botón */
+  color: #ffffff !important; /* Color del texto en blanco */
+  font-family: "Nunito", sans-serif; /* Fuente principal del botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: 600; /* Negrita para el texto */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  padding: 0.6rem 1.25rem !important; /* Espaciado interno (vertical y horizontal) */
+  border-radius: 40px !important; /* Bordes redondeados para un diseño más suave */
+  border: none; /* Elimina cualquier borde del botón */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del área del botón */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para el color de fondo y la sombra */
+  position: relative; /* Posición relativa para manejar efectos internos */
+  margin-top: 6px; /* Espaciado superior */
 }
 
+/* ÍCONO Y TEXTO DENTRO DEL BOTÓN */
 .btn-cuenta i,
 .btn-cuenta span {
-  display: inline-flex;
-  align-items: center;
-  color: #ffffff !important;
+  display: inline-flex; /* Muestra los elementos internos como flexibles en línea */
+  align-items: center; /* Centra verticalmente el contenido */
+  color: #ffffff !important; /* Asegura que el color del texto sea blanco */
 }
 
+/* EFECTO DE BRILLO EN EL BOTÓN */
 .btn-cuenta::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -60%;
-  width: 120%;
-  height: 100%;
+  content: ""; /* Elemento vacío para crear el efecto */
+  position: absolute; /* Posición absoluta para cubrir todo el botón */
+  top: 0; /* Alineado en la parte superior */
+  left: -60%; /* Comienza fuera del área visible */
+  width: 120%; /* Ocupa más del ancho del botón */
+  height: 100%; /* Ocupa toda la altura del botón */
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0)
-  );
-  transform: skewX(-20deg);
-  transition: left 0.5s ease-in-out;
-  pointer-events: none;
-
+  ); /* Gradiente para el efecto de brillo */
+  transform: skewX(-20deg); /* Inclina el gradiente */
+  transition: left 0.5s ease-in-out; /* Transición suave para el movimiento */
+  pointer-events: none; /* Evita que interfiera con el mouse */
 }
+
+/* HOVER DEL BOTÓN */
 .btn-cuenta:hover {
-  background-color: #e96565;
-  box-shadow: 0 0.375rem 1rem rgba(255, 122, 121, 0.45);
+  background-color: #e96565; /* Cambia el color de fondo al pasar el mouse */
+  box-shadow: 0 0.375rem 1rem rgba(255, 122, 121, 0.45); /* Agrega una sombra al pasar el mouse */
 }
 
+/* EFECTO DE BRILLO AL PASAR EL MOUSE */
 .btn-cuenta:hover::before {
-  left: 100%;
+  left: 100%; /* Mueve el efecto de brillo hacia la derecha */
 }
 
 /* Footer */
