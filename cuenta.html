@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artea | Registro e Inicio de Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cuenta.css" />
+    <link rel="stylesheet" href="style-navegacion.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Aquí va el contenido del header -->
+        <script src="components.js" defer></script>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor-slider" id="contenedorSlider">
+        <!-- Formulario dinámico -->
+        <div class="contenedor-formularios">
+          <!-- Registro -->
+          <div class="formulario formulario-registro">
+            <h2 class="titulo">Regístrate en Artea</h2>
+            <form
+              class="formulario-contacto"
+              id="formulario-contacto"
+              name="frm"
+            >
+              <div class="form-grupo">
+                <input
+                  type="text"
+                  id="nombres"
+                  name="fname"
+                  class="input_field"
+                  placeholder=" "
+                  required
+                />
+                <label for="nombres" class="label">Nombres:</label>
+                <i class="fa-solid fa-user icon"></i>
+              </div>
+              <div class="form-grupo">
+                <input
+                  type="text"
+                  id="apellidos"
+                  name="flastname"
+                  class="input_field"
+                  placeholder=" "
+                  required
+                />
+                <label for="apellidos" class="label">Apellidos:</label>
+                <i class="fa-solid fa-user-tag icon"></i>
+              </div>
+              <div class="form-grupo">
+                <input
+                  type="email"
+                  id="email"
+                  name="femail"
+                  class="input_field"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="label">Correo institucional:</label>
+                <i class="fa-solid fa-envelope icon"></i>
+              </div>
+              <div class="form-grupo">
+                <select id="pais" class="input_field" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="peru">Perú</option>
+                  <option value="mexico">México</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="españa">España</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <label for="pais" class="label">País:</label>
+                <i class="fa-solid fa-globe icon"></i>
+              </div>
+              <div class="form-grupo">
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="fphone"
+                  class="input_field"
+                  placeholder=" "
+                />
+                <label for="telefono" class="label">Teléfono:</label>
+                <i class="fa-solid fa-phone icon"></i>
+              </div>
+              <a href="intereses.html" class="btn-submit">
+                Registrarse
+              </a>
+            </form>
+          </div>
+
+          <!-- Login -->
+          <div class="formulario formulario-login">
+            <h2 class="titulo">Inicia sesión en Artea</h2>
+            <form
+              class="formulario-contacto"
+              id="formulario-login"
+              name="loginFrm"
+            >
+              <div class="form-grupo">
+                <input
+                  type="email"
+                  id="login-email"
+                  name="lemail"
+                  class="input_field"
+                  placeholder=" "
+                  required
+                />
+                <label for="login-email" class="label"
+                  >Correo institucional:</label
+                >
+                <i class="fa-solid fa-envelope icon"></i>
+              </div>
+              <div class="form-grupo">
+                <input
+                  type="password"
+                  id="login-password"
+                  name="lpass"
+                  class="input_field"
+                  placeholder=" "
+                  required
+                />
+                <label for="login-password" class="label">Contraseña:</label>
+                <i class="fa-solid fa-lock icon"></i>
+              </div>
+              <button type="submit" class="btn-submit">Iniciar sesión</button>
+            </form>
+          </div>
+          <!-- Panel dinámico -->
+          <div class="panel-overlay">
+            <div class="panel derecha">
+              <h2>¿Ya tienes cuenta?</h2>
+              <p>Inicia sesión para continuar con Artea</p>
+              <button class="btn-slide" id="btnLogin">Iniciar sesión</button>
+            </div>
+            <div class="panel izquierda">
+              <h2>¿Primera vez aquí?</h2>
+              <p>Regístrate y sé parte de nuestra comunidad artística 💜</p>
+              <button class="btn-slide" id="btnRegistro">Registrarme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

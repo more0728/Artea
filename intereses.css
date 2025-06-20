@@ -1,0 +1,185 @@
+body {
+  background-color: #f9f1e7;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Asegura que el header, main y footer estén en columna */
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.config-container {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+  padding: 2rem 3rem;
+  max-width: 800px;
+  width: 90%;
+}
+
+.config-container h2 {
+  color: #2e2e2e;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  color: #16447b;
+  margin-bottom: 1rem;
+}
+
+.options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.option {
+  flex: 1 1 150px;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.option:hover,
+.option.selected {
+  background-color: #46a4d7;
+  color: #fff;
+  border-color: #46a4d7;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.submit-btn {
+  font-family: "Nunito", sans-serif;
+  background-color: #ff7a79;
+  color: #fff;
+  padding: 0.9rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e96565;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .config-container {
+    padding: 1.5rem 2rem; /* Reduce el padding */
+    max-width: 600px; /* Ajusta el ancho máximo */
+  }
+
+  .config-container h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .section h3 {
+    font-size: 1.1rem; /* Reduce el tamaño del subtítulo */
+  }
+
+  .options-grid {
+    gap: 0.8rem; /* Reduce el espacio entre las opciones */
+  }
+
+  .option {
+    flex: 1 1 120px; /* Ajusta el tamaño de las opciones */
+    padding: 0.8rem; /* Reduce el padding interno */
+  }
+
+  .submit-btn {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.8rem 2rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .config-container {
+    padding: 1rem 1.5rem; /* Reduce aún más el padding */
+    max-width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  }
+
+  .config-container h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .section h3 {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .options-grid {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 0.6rem; /* Reduce el espacio entre las opciones */
+  }
+
+  .option {
+    flex: 1 1 auto; /* Ajusta el tamaño de las opciones */
+    padding: 0.6rem; /* Reduce el padding interno */
+  }
+
+  .submit-btn {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.6rem 1.5rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .config-container {
+    padding: 0.8rem 1rem; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .config-container h2 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .section h3 {
+    font-size: 0.9rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .options-grid {
+    gap: 0.5rem; /* Reduce el espacio entre las opciones */
+  }
+
+  .option {
+    padding: 0.5rem; /* Reduce el padding interno */
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .submit-btn {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.5rem 1rem; /* Ajusta el padding */
+  }
+}

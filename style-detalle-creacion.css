@@ -1,0 +1,184 @@
+.detalle-creacion {
+  text-align: center;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem; /* Aproximadamente 480px si 1rem = 16px */
+}
+
+.detalle-creacion h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.obra-detalle {
+  display: flex;
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+  justify-content: center; /* Alinea horizontalmente */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.obra-detalle img {
+  width: 150px; /* Tamaño fijo para las imágenes */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 15px;
+}
+
+.obra-detalle .info {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Asegura que los textos estén en columna */
+  justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-editar,
+.btn-volver {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+
+.btn-editar::before,.btn-volver::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+.btn-editar:hover,
+.btn-volver:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+
+.btn-editar:hover::before,
+.btn-volver:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .detalle-creacion {
+    padding: 40px 15px; /* Agrega un poco de padding */
+  }
+
+  .detalle-creacion h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .obra-detalle {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre los elementos */
+  }
+
+  .obra-detalle img {
+    width: 120px; /* Reduce el tamaño de la imagen */
+  }
+
+  .obra-detalle .info {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .botones {
+    gap: 15px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-editar,
+  .btn-volver {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .detalle-creacion {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .detalle-creacion h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .obra-detalle img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+  }
+
+  .obra-detalle .info {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .botones {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 10px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-editar,
+  .btn-volver {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .detalle-creacion {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .detalle-creacion h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .obra-detalle img {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+  }
+
+  .obra-detalle .info {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .botones {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 8px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-editar,
+  .btn-volver {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

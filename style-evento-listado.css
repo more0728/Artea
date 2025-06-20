@@ -1,0 +1,179 @@
+.eventos-listado {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.eventos-listado h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.eventos-listado p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.evento {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evento .info {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.evento .info span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.btn-inscribirme {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+
+.btn-inscribirme::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+} 
+.btn-inscribirme:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+} 
+.btn-inscribirme:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .eventos-listado {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .eventos-listado h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .eventos-listado p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .evento {
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    padding: 15px; /* Reduce el padding interno */
+  }
+
+  .evento .info {
+    font-size: 0.95rem; /* Reduce el tamaño del texto */
+  }
+
+  .evento .info span {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto secundario */
+  }
+
+  .btn-inscribirme {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+    align-self: flex-end; /* Alinea el botón al final */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .eventos-listado {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .eventos-listado h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .eventos-listado p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .evento {
+    padding: 10px; /* Reduce el padding interno */
+  }
+
+  .evento .info {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .evento .info span {
+    font-size: 0.75rem; /* Ajusta el tamaño del texto secundario */
+  }
+
+  .btn-inscribirme {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .eventos-listado {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .eventos-listado h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .eventos-listado p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .evento {
+    padding: 8px; /* Ajusta el padding interno */
+  }
+
+  .evento .info {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .evento .info span {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto secundario */
+  }
+
+  .btn-inscribirme {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}
+

@@ -1,0 +1,216 @@
+.galeria-privada {
+  text-align: center;
+  padding: 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem; /* Aproximadamente 480px si 1rem = 16px */
+}
+
+.galeria-privada h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.galeria-privada p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.obras-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.obra {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex; /* Habilita flexbox */
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto */
+}
+
+.obra img {
+  width: 120px; /* Tamaño fijo para las imágenes */
+  height: 120px; /* Altura fija */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Ajusta la imagen para que se recorte y mantenga proporción */
+}
+
+.obra .fecha {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.obra p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: auto; /* Asegura que el texto se mantenga alineado */
+}
+
+.btn-nueva {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-nueva::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+.btn-nueva:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+.btn-nueva:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .galeria-privada {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .galeria-privada h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .galeria-privada p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .obras-container {
+    gap: 20px; /* Reduce el espacio entre las obras */
+  }
+
+  .obra {
+    width: 120px; /* Reduce el ancho de las tarjetas */
+    padding: 10px; /* Ajusta el padding interno */
+  }
+
+  .obra img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: 100px; /* Ajusta la altura */
+  }
+
+  .obra p {
+    font-size: 0.85rem; /* Reduce el tamaño del texto */
+  }
+
+  .btn-nueva {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .galeria-privada {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .galeria-privada h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .galeria-privada p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .obras-container {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre las obras */
+  }
+
+  .obra {
+    width: 100%; /* Asegura que las tarjetas ocupen el ancho completo */
+    padding: 8px; /* Ajusta el padding interno */
+  }
+
+  .obra img {
+    width: 80px; /* Ajusta el tamaño de las imágenes */
+    height: 80px; /* Ajusta la altura */
+  }
+
+  .obra p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-nueva {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .galeria-privada {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .galeria-privada h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .galeria-privada p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .obras-container {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 10px; /* Reduce el espacio entre las obras */
+  }
+
+  .obra {
+    padding: 5px; /* Ajusta el padding interno */
+  }
+
+  .obra img {
+    width: 70px; /* Ajusta el tamaño de las imágenes */
+    height: 70px; /* Ajusta la altura */
+  }
+
+  .obra p {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-nueva {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

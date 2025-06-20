@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artea - Lienzo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-navegacion.css" />
+    <link rel="stylesheet" href="style-lienzo.css" />
+    <script src="components.js" defer></script>
+  </head>
+  <body>
+    <main class="lienzo">
+      <h2>Expresa tus emociones</h2>
+      <canvas id="canvas" width="800" height="600"></canvas>
+      <div class="controls">
+        <button id="clearCanvas" class="btn-primario">Limpiar Lienzo</button>
+        <a href="registro-emocion.html" id="saveCanvas" class="btn-primario">Guardar Lienzo</a>
+      </div>
+      <p class="instrucciones">
+        Usa el mouse para dibujar en el lienzo. Haz clic en "Limpiar Lienzo"
+        para empezar de nuevo.
+      </p>
+    </main>
+  </body>
+</html>

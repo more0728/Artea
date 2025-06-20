@@ -1,0 +1,201 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f9f0e6; /* Fondo suave */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+main.registro-emocion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espacio entre el formulario y la imagen */
+  padding: 40px;
+}
+
+form#emocion-form {
+  background-color: #e3dad2; /* Fondo gris claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 300px;
+  text-align: center; /* Centra el contenido dentro del formulario */
+}
+
+form#emocion-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+form#emocion-form select,
+form#emocion-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form#emocion-form button {
+  background-color: #da3e3e; /* Rojo cereza */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form#emocion-form button:hover {
+  background-color: #b73131; /* Rojo más oscuro */
+}
+
+main.registro-emocion img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  header p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  main.registro-emocion {
+    gap: 20px; /* Reduce el espacio entre el formulario y la imagen */
+    padding: 30px; /* Reduce el padding */
+  }
+
+  form#emocion-form {
+    width: 250px; /* Reduce el ancho del formulario */
+    padding: 15px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form label {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  form#emocion-form select,
+  form#emocion-form textarea {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    padding: 8px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form button {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 8px 15px; /* Ajusta el padding */
+  }
+
+  main.registro-emocion img {
+    max-width: 250px; /* Reduce el tamaño máximo de la imagen */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  header p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  main.registro-emocion {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre los elementos */
+    padding: 20px; /* Reduce aún más el padding */
+  }
+
+  form#emocion-form {
+    width: 100%; /* Asegura que el formulario ocupe el ancho completo */
+    padding: 10px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form label {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  form#emocion-form select,
+  form#emocion-form textarea {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+    padding: 6px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form button {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 6px 12px; /* Ajusta el padding */
+  }
+
+  main.registro-emocion img {
+    max-width: 200px; /* Reduce el tamaño máximo de la imagen */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  header p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  main.registro-emocion {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 10px; /* Reduce el espacio entre los elementos */
+    padding: 10px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  form#emocion-form {
+    width: 100%; /* Mantiene el formulario ocupando el ancho completo */
+    padding: 8px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form label {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  form#emocion-form select,
+  form#emocion-form textarea {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto */
+    padding: 5px; /* Reduce el padding interno */
+  }
+
+  form#emocion-form button {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 5px 10px; /* Ajusta el padding */
+  }
+
+  main.registro-emocion img {
+    max-width: 150px; /* Reduce el tamaño máximo de la imagen */
+  }
+}

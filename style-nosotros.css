@@ -1,0 +1,96 @@
+/* Nosotros */
+.nosotros {
+    text-align: center;
+    padding: 40px 100px;
+}
+
+.nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.nosotros p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.mission-vision h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.mission-vision p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .nosotros {
+    padding: 20px 50px; /* Reduce el padding */
+  }
+
+  .nosotros h2 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .nosotros p {
+    font-size: 1.25rem; /* Reduce el tamaño del texto */
+  }
+
+  .mission-vision h3 {
+    font-size: 1.75rem; /* Reduce el tamaño del título */
+  }
+
+  .mission-vision p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nosotros {
+    padding: 15px 30px; /* Reduce aún más el padding */
+  }
+
+  .nosotros h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .nosotros p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .mission-vision h3 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título */
+  }
+
+  .mission-vision p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .nosotros {
+    padding: 10px 20px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .nosotros h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .nosotros p {
+    font-size: 0.8rem; /* Reduce el tamaño del texto */
+  }
+
+  .mission-vision h3 {
+    font-size: 1.25rem; /* Ajusta el tamaño del título */
+  }
+
+  .mission-vision p {
+    font-size: 0.75rem; /* Ajusta el tamaño del texto */
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artea - Registro de Emoción</title>
+    <link rel="stylesheet" href="style-navegacion.css" />
+    <link rel="stylesheet" href="style-registro-emocion.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Registro como te sentiste</h1>
+      <p>Lleva un diario donde podrás soltar los sentimientos y reflexionar sobre tus emociones</p>
+    </header>
+
+    <main class="registro-emocion">
+      <form id="emocion-form">
+        <label for="emocion">Estado emocional</label>
+        <select id="emocion" name="emocion" required>
+          <option value="feliz">Feliz</option>
+          <option value="triste">Triste</option>
+          <option value="nervioso">Nervioso</option>
+          <option value="enojado">Enojado</option>
+        </select>
+
+        <label for="descripcion">Comentario</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+        <button type="submit" class="btn-primario">Registrar</button>
+      </form>
+
+      <img src="imagenes/HU22/2.png" alt="Imagen representativa de emociones" />
+    </main>
+
+    <script src="components.js" defer></script>
+  </body>
+</html>

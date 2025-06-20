@@ -1,0 +1,187 @@
+.retos-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.retos-container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.retos-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.ciclos-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.ciclos-botones button {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-primario {
+  background-color: #add8f7; /* Celeste */
+  color: #000;
+}
+.btn-primario:hover {
+  background-color: #8ab9e0; /* Celeste más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(173, 216, 247, 0.4);
+}
+
+.btn-secundario {
+  background-color: #f7b2b2; /* Rosado */
+  color: #000;
+}
+.btn-secundario:hover {
+  background-color: #e08a8a; /* Rosado más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(247, 178, 178, 0.4);
+}
+
+.btn-tecnologico {
+  background-color: #ffe08c; /* Amarillo claro */
+  color: #000;
+}
+.btn-tecnologico:hover {
+  background-color: #e0c18a; /* Amarillo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(255, 224, 140, 0.4);
+}
+
+.btn-universitario {
+  background-color: #bce3da; /* Verde agua */
+  color: #000;
+}
+.btn-universitario:hover {
+  background-color: #9ac2b8; /* Verde agua más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(188, 227, 218, 0.4);
+}
+
+.ciclos-botones button:hover {
+  transform: scale(1.05);
+}
+
+.btn-primario,.btn-secundario,.btn-tecnologico,.btn-universitario {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-primario::before,
+.btn-secundario::before,.btn-tecnologico::before,
+.btn-universitario::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+.btn-primario:hover::before,
+.btn-secundario:hover::before,.btn-universitario:hover::before,
+.btn-tecnologico:hover::before{
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .retos-container {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .retos-container h1 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .retos-container p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .ciclos-botones {
+    gap: 0.8rem; /* Reduce el espacio entre los botones */
+  }
+
+  .ciclos-botones button {
+    padding: 15px 30px; /* Ajusta el padding de los botones */
+    font-size: 1rem; /* Reduce el tamaño del texto en los botones */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .retos-container {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .retos-container h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .retos-container p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .ciclos-botones {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 0.6rem; /* Reduce el espacio entre los botones */
+  }
+
+  .ciclos-botones button {
+    padding: 12px 25px; /* Ajusta el padding de los botones */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto en los botones */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .retos-container {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .retos-container h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .retos-container p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .ciclos-botones {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 0.5rem; /* Reduce el espacio entre los botones */
+  }
+
+  .ciclos-botones button {
+    padding: 10px 20px; /* Ajusta el padding de los botones */
+    font-size: 0.8rem; /* Ajusta el tamaño del texto en los botones */
+  }
+}
+

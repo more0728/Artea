@@ -1,0 +1,122 @@
+.mensaje-final {
+  text-align: center;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem; /* Aproximadamente 480px si 1rem = 16px */
+}
+
+.mensaje-final h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.mensaje-final p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-recursos {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-recursos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.btn-recursos:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+
+.btn-recursos:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .mensaje-final {
+    padding: 40px 15px; /* Agrega un poco de padding */
+  }
+
+  .mensaje-final h1 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .mensaje-final p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .btn-recursos {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .mensaje-final {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .mensaje-final h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .mensaje-final p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-recursos {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .mensaje-final {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .mensaje-final h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .mensaje-final p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-recursos {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

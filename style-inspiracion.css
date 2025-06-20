@@ -1,0 +1,299 @@
+/* Inspiracion */
+.inspiracion {
+  text-align: center;
+  padding: 20px;
+}
+
+.inspiracion h2 {
+  font-size: 2rem;
+  color: #2c3e50; /* Cambia el color del texto */
+  background-color: transparent; /* Elimina el fondo verde */
+  padding: 0; /* Elimina el padding */
+  border-radius: 0; /* Elimina los bordes redondeados */
+  margin-bottom: 20px; /* Mantén el espacio debajo del título */
+  text-align: center; /* Centra el texto */
+}
+
+.inspiracion p {
+  font-style: italic;
+  margin: 10px 0 20px;
+}
+
+.inspiracion ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+.inspiracion ul li {
+  margin-bottom: 20px; /* Espacio entre los ejercicios */
+}
+
+/* Inspiración - Estilos específicos */
+.inspiracion-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.inspiracion-hero {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  gap: 20px; /* Espacio entre el texto y la imagen */
+  padding: 40px 20px; /* Ajusta el espacio interno */
+}
+
+.inspiracion-hero h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.inspiracion-hero p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.inspiracion-content {
+  max-width: 50%; /* Limita el ancho del texto */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.inspiracion-img {
+  max-width: 40%; /* Limita el ancho de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Opcional: agrega bordes redondeados */
+}
+
+
+
+
+.frase-box {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Agrega espacio encima del div */
+  text-align: center; /* Opcional: centra el contenido */
+}
+
+.frase-explicacion {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+/* Botones */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-continuar {
+  margin-top: 20px;
+  background-color: #a9d08e;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-continuar,.btn-secundario,.btn-primario {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-continuar::before,.btn-secundario::before,.btn-primario::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+.btn-continuar:hover,.btn-secundario:hover,.btn-primario:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+.btn-continuar:hover::before,.btn-secundario:hover::before,.btn-primario:hover::before {
+  left: 100%;
+}
+
+.centrado {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto */
+  height: 100%; /* Asegura que ocupe todo el espacio disponible */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.reflexiones {
+  text-align: center;
+  padding: 20px;
+}
+
+.reflexiones h2 {
+  font-size: 1.8rem;
+  color: #2c3e50; /* Cambia el color del texto */
+  margin-bottom: 15px;
+}
+
+.reflexiones p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .inspiracion {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .inspiracion h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .inspiracion p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .inspiracion-hero {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre los elementos */
+  }
+
+  .inspiracion-content {
+    max-width: 80%; /* Ajusta el ancho máximo del texto */
+  }
+
+  .inspiracion-img {
+    max-width: 60%; /* Ajusta el ancho máximo de la imagen */
+  }
+
+  .frase-box {
+    padding: 20px; /* Reduce el padding interno */
+    max-width: 500px; /* Ajusta el ancho máximo */
+  }
+
+  .botones {
+    gap: 15px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-continuar {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .inspiracion {
+    padding: 10px; /* Reduce aún más el padding */
+  }
+
+  .inspiracion h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .inspiracion p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .inspiracion-hero {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 10px; /* Reduce el espacio entre los elementos */
+  }
+
+  .inspiracion-content {
+    max-width: 100%; /* Asegura que el texto ocupe el ancho completo */
+  }
+
+  .inspiracion-img {
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+  }
+
+  .frase-box {
+    padding: 15px; /* Reduce el padding interno */
+    max-width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  }
+
+  .botones {
+    gap: 10px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-continuar {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .inspiracion {
+    padding: 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .inspiracion h2 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .inspiracion p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .inspiracion-hero {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 8px; /* Reduce el espacio entre los elementos */
+  }
+
+  .inspiracion-content {
+    max-width: 100%; /* Asegura que el texto ocupe el ancho completo */
+  }
+
+  .inspiracion-img {
+    max-width: 70%; /* Ajusta el ancho máximo de la imagen */
+  }
+
+  .frase-box {
+    padding: 10px; /* Reduce el padding interno */
+    max-width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  }
+
+  .botones {
+    gap: 8px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-continuar {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

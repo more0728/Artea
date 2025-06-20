@@ -1,0 +1,154 @@
+.emocion-inicio {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.emocion-inicio h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.emociones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.carta {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.carta .emoji {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* Colores de fondo */
+.azul {
+  background-color: #bde0fe;
+}
+.amarillo {
+  background-color: #ffe08c;
+}
+.verde {
+  background-color: #b7e5b4;
+}
+.lila {
+  background-color: #e6d1ff;
+}
+
+.btn-comenzar {
+  background-color: #ff7a79;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-comenzar:hover {
+  background-color: #e96565;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .emocion-inicio {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .emocion-inicio h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .emociones {
+    gap: 20px; /* Reduce el espacio entre las cartas */
+  }
+
+  .carta {
+    width: 120px; /* Reduce el tamaño de las cartas */
+    height: 120px; /* Ajusta la altura */
+  }
+
+  .carta .emoji {
+    font-size: 2rem; /* Reduce el tamaño del emoji */
+  }
+
+  .btn-comenzar {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 10px 24px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .emocion-inicio {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .emocion-inicio h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .emociones {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre las cartas */
+  }
+
+  .carta {
+    width: 100px; /* Ajusta el tamaño de las cartas */
+    height: 100px; /* Ajusta la altura */
+  }
+
+  .carta .emoji {
+    font-size: 1.8rem; /* Ajusta el tamaño del emoji */
+  }
+
+  .btn-comenzar {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 8px 20px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .emocion-inicio {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .emocion-inicio h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .emociones {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 10px; /* Reduce el espacio entre las cartas */
+  }
+
+  .carta {
+    width: 80px; /* Ajusta el tamaño de las cartas */
+    height: 80px; /* Ajusta la altura */
+  }
+
+  .carta .emoji {
+    font-size: 1.5rem; /* Ajusta el tamaño del emoji */
+  }
+
+  .btn-comenzar {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 6px 16px; /* Ajusta el padding */
+  }
+}

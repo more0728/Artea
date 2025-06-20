@@ -1,0 +1,123 @@
+.cuenta-container {
+  text-align: center;
+  padding: 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 30rem; /* Aproximadamente 480px si 1rem = 16px */
+}
+
+.cuenta-container h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.cuenta-container img {
+  width: 150px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-ver-galeria {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-ver-galeria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.btn-ver-galeria:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+.btn-ver-galeria:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .cuenta-container {
+    padding: 40px 15px; /* Agrega un poco de padding */
+  }
+
+  .cuenta-container h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .cuenta-container img {
+    width: 120px; /* Reduce el tamaño de la imagen */
+  }
+
+  .btn-ver-galeria {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .cuenta-container {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .cuenta-container h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .cuenta-container img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+  }
+
+  .btn-ver-galeria {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .cuenta-container {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .cuenta-container h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .cuenta-container img {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+  }
+
+  .btn-ver-galeria {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

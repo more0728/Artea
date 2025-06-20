@@ -1,0 +1,147 @@
+.reto-progreso {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.reto-progreso h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.reto-progreso p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.barra-progreso {
+  background-color: #ddd;
+  height: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra-progreso .progreso {
+  background-color: #a9d08e;
+  width: 35%;
+  height: 100%;
+}
+
+.lienzo {
+  width: 90%;
+  max-width: 500px;
+  height: 250px;
+  margin: 0 auto 30px auto;
+  border-radius: 15px;
+  border: 1.5px solid #999;
+  background-color: #fff;
+}
+
+.btn-finalizar {
+  background-color: #ff7a79;
+  padding: 12px 28px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-finalizar:hover {
+  background-color: #e96565;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .reto-progreso {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .reto-progreso h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .reto-progreso p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .barra-progreso {
+    width: 90%; /* Aumenta el ancho relativo */
+    max-width: 350px; /* Reduce el tamaño máximo */
+  }
+
+  .lienzo {
+    height: 200px; /* Reduce la altura del lienzo */
+    max-width: 450px; /* Reduce el tamaño máximo */
+  }
+
+  .btn-finalizar {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 10px 24px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .reto-progreso {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .reto-progreso h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .reto-progreso p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .barra-progreso {
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    max-width: 300px; /* Ajusta el tamaño máximo */
+  }
+
+  .lienzo {
+    height: 180px; /* Reduce la altura del lienzo */
+    max-width: 400px; /* Ajusta el tamaño máximo */
+  }
+
+  .btn-finalizar {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 8px 20px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .reto-progreso {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .reto-progreso h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .reto-progreso p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .barra-progreso {
+    width: 100%; /* Mantiene el ancho completo */
+    max-width: 250px; /* Ajusta el tamaño máximo */
+  }
+
+  .lienzo {
+    height: 150px; /* Ajusta la altura del lienzo */
+    max-width: 300px; /* Ajusta el tamaño máximo */
+  }
+
+  .btn-finalizar {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 6px 16px; /* Ajusta el padding */
+  }
+}

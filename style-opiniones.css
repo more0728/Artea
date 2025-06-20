@@ -1,0 +1,133 @@
+/* Opiniones */
+.opiniones {
+    text-align: center;
+    padding: 40px 100px;
+}
+
+.opiniones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.opiniones p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.testimonials {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.testimonial h3 {
+    font-size: 1.8rem;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .opiniones {
+    padding: 20px 50px; /* Reduce el padding */
+  }
+
+  .opiniones h2 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .opiniones p {
+    font-size: 1.25rem; /* Reduce el tamaño del texto */
+  }
+
+  .testimonials {
+    gap: 20px; /* Reduce el espacio entre los testimonios */
+  }
+
+  .testimonial {
+    width: 250px; /* Reduce el ancho de los testimonios */
+  }
+
+  .testimonial h3 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+
+  .testimonial p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .opiniones {
+    padding: 15px 30px; /* Reduce aún más el padding */
+  }
+
+  .opiniones h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .opiniones p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .testimonials {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre los testimonios */
+  }
+
+  .testimonial {
+    width: 100%; /* Asegura que los testimonios ocupen el ancho completo */
+  }
+
+  .testimonial h3 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título */
+  }
+
+  .testimonial p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .opiniones {
+    padding: 10px 20px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .opiniones h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .opiniones p {
+    font-size: 0.8rem; /* Reduce el tamaño del texto */
+  }
+
+  .testimonial {
+    padding: 15px; /* Reduce el padding interno */
+    width: 100%; /* Asegura que los testimonios ocupen el ancho completo */
+  }
+
+  .testimonial h3 {
+    font-size: 1.25rem; /* Ajusta el tamaño del título */
+  }
+
+  .testimonial p {
+    font-size: 0.75rem; /* Ajusta el tamaño del texto */
+  }
+}
+
+

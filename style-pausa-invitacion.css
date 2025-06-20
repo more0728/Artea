@@ -1,0 +1,129 @@
+.pausa-invitacion {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.pausa-invitacion h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.pausa-invitacion p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-si {
+  background-color: #ff7a79;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-omitir {
+  background-color: transparent;
+  border: 1.5px solid #ff7a79;
+  color: #000;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-si:hover {
+  background-color: #e96565;
+}
+
+.btn-omitir:hover {
+  background-color: #ffe5e5;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .pausa-invitacion {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .pausa-invitacion h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .pausa-invitacion p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .botones {
+    gap: 15px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-si,
+  .btn-omitir {
+    font-size: 0.9rem; /* Reduce el tamaño del texto en los botones */
+    padding: 10px 20px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .pausa-invitacion {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .pausa-invitacion h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .pausa-invitacion p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .botones {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 10px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-si,
+  .btn-omitir {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto en los botones */
+    padding: 8px 18px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .pausa-invitacion {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .pausa-invitacion h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .pausa-invitacion p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .botones {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 8px; /* Reduce el espacio entre los botones */
+  }
+
+  .btn-si,
+  .btn-omitir {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto en los botones */
+    padding: 6px 15px; /* Ajusta el padding */
+  }
+}

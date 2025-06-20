@@ -1,0 +1,157 @@
+.contacto {
+  text-align: center;
+  padding: 20px;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.contacto p {
+  font-style: italic;
+  margin: 10px 0 20px;
+}
+
+/* Redes sociales */
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.social .left,
+.social .right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.social a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.social img {
+  max-height: 30px;
+}
+
+/* Imagen centrada */
+.imagen-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imagen-centro img {
+  max-width: 500px;
+  max-height: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .contacto {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .contacto h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .contacto p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .social {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 20px; /* Ajusta el espacio entre las secciones */
+  }
+
+  .social .left,
+  .social .right {
+    align-items: center; /* Centra los elementos */
+  }
+
+  .social a {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    padding: 5px 8px; /* Ajusta el padding */
+  }
+
+  .imagen-centro img {
+    max-width: 400px; /* Reduce el tamaño máximo de la imagen */
+    max-height: 250px; /* Ajusta la altura máxima */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contacto {
+    padding: 10px; /* Reduce aún más el padding */
+  }
+
+  .contacto h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .contacto p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .social {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 15px; /* Reduce el espacio entre las secciones */
+  }
+
+  .social a {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+    padding: 4px 6px; /* Ajusta el padding */
+  }
+
+  .imagen-centro img {
+    max-width: 300px; /* Reduce el tamaño máximo de la imagen */
+    max-height: 200px; /* Ajusta la altura máxima */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .contacto {
+    padding: 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .contacto h2 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .contacto p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .social a {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto */
+    padding: 3px 5px; /* Ajusta el padding */
+  }
+
+  .imagen-centro img {
+    max-width: 250px; /* Reduce el tamaño máximo de la imagen */
+    max-height: 150px; /* Ajusta la altura máxima */
+  }
+}
+

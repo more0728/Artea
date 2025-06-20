@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pausa emocional activa</title>
+    <link rel="stylesheet" href="style-navegacion.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-pausa-activa.css" />
+    <script src="components.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="pausa-activa">
+        <h1>Pausa emocional activa</h1>
+        <p>
+          Concéntrate en tu respiración mientras escuchas los sonidos a
+          continuación
+        </p>
+
+        <div class="barra-progreso">
+          <div class="progreso"></div>
+        </div>
+        <span class="tiempo-restante">30 seg restantes</span>
+
+        <div class="contenido">
+          <img src="imagenes/audio-icono.png" alt="Audio pausa" />
+          <p>Recuerda que está bien<br />tomar un descanso.</p>
+          <img src="imagenes/corazon.png" alt="Corazón" class="corazon" />
+        </div>
+      </section>
+    </main>
+    <script>
+      // Redirige después de 90 segundos (90,000 milisegundos)
+      setTimeout(() => {
+        window.location.href = "pausa-completada.html";
+      }, 30000);
+    </script>
+  </body>
+</html>

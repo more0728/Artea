@@ -1,0 +1,248 @@
+.sala-activa-container {
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+  text-align: center;
+}
+
+.sala-activa-container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.sala-activa-container p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.sala-activa-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Video simulado */
+.video-simulacion {
+  background-color: #222;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play-button {
+  font-size: 2.5rem;
+  color: #ccc;
+  background-color: #eee;
+  border-radius: 50%;
+  padding: 10px 14px;
+}
+
+/* Participantes */
+.participantes {
+  text-align: left;
+  min-width: 200px;
+}
+
+.participantes h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.participantes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.participantes li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.participantes img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Botón finalizar */
+.btn-finalizar {
+  font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-finalizar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+.btn-finalizar:hover {
+  background-color: #b73131; /* Rojo más oscuro en hover */
+  box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+.btn-finalizar:hover::before {
+  left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .sala-activa-container {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .sala-activa-container h1 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .sala-activa-container p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .sala-activa-grid {
+    gap: 20px; /* Reduce el espacio entre los elementos */
+  }
+
+  .video-simulacion {
+    width: 300px; /* Reduce el tamaño del video */
+    height: 200px; /* Ajusta la altura */
+  }
+
+  .play-button {
+    font-size: 2rem; /* Reduce el tamaño del botón de reproducción */
+  }
+
+  .participantes {
+    min-width: 180px; /* Reduce el ancho mínimo */
+  }
+
+  .participantes h3 {
+    font-size: 1.2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .participantes li {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+  }
+
+  .btn-finalizar {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sala-activa-container {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .sala-activa-container h1 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .sala-activa-container p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .sala-activa-grid {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre los elementos */
+  }
+
+  .video-simulacion {
+    width: 250px; /* Ajusta el tamaño del video */
+    height: 150px; /* Ajusta la altura */
+  }
+
+  .play-button {
+    font-size: 1.8rem; /* Ajusta el tamaño del botón de reproducción */
+  }
+
+  .participantes {
+    min-width: 100%; /* Asegura que ocupe el ancho completo */
+  }
+
+  .participantes h3 {
+    font-size: 1rem; /* Ajusta el tamaño del encabezado */
+  }
+
+  .participantes li {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-finalizar {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .sala-activa-container {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .sala-activa-container h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .sala-activa-container p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .video-simulacion {
+    width: 200px; /* Ajusta el tamaño del video */
+    height: 120px; /* Ajusta la altura */
+  }
+
+  .play-button {
+    font-size: 1.5rem; /* Ajusta el tamaño del botón de reproducción */
+  }
+
+  .participantes {
+    min-width: 100%; /* Mantiene el ancho completo */
+  }
+
+  .participantes h3 {
+    font-size: 0.9rem; /* Ajusta el tamaño del encabezado */
+  }
+
+  .participantes li {
+    font-size: 0.7rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn-finalizar {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}

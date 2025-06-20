@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizar tendencias</title>
+    <link rel="stylesheet" href="style-navegacion.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-visualizar-tendencias.css" />
+    <script src="components.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="visualizar-tendencias">
+        <h1>Visualizar tendencias</h1>
+
+        <div class="filtros">
+          <select>
+            <option>Ciclo académico</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+
+          <select>
+            <option>Facultad</option>
+            <option>Ingeniería</option>
+            <option>Psicología</option>
+          </select>
+        </div>
+
+        <p>Selecciona una facultad para ver tendencias específicas</p>
+
+        <div class="grafico">
+          <img
+            src="imagenes/HU16/tabla 3.png"
+            alt="Gráfico circular tendencias"
+          />
+        </div>
+        <div class="botones">
+          <a href="panel-tendencias.html" class="btn-filtrar"
+            >Panel de Tendencias</a
+          >
+          <a href="tendencias-facultad.html" class="btn-filtrar"
+            >Ver por facultad</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

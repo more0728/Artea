@@ -1,0 +1,150 @@
+.evolucion-emocional {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f0e6;
+}
+
+.evolucion-emocional h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.comparacion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.caja p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.imagen-emocion {
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.imagen-emocion img {
+  width: 60%;
+}
+
+.btn-explorar {
+  background-color: #ff7a79;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-explorar:hover {
+  background-color: #e96565;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .evolucion-emocional {
+    padding: 40px 15px; /* Reduce el padding */
+  }
+
+  .evolucion-emocional h1 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .comparacion {
+    gap: 30px; /* Reduce el espacio entre las cajas */
+  }
+
+  .caja p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  .imagen-emocion {
+    width: 110px; /* Reduce el tamaño de la imagen */
+    height: 110px; /* Ajusta la altura */
+  }
+
+  .btn-explorar {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 10px 25px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .evolucion-emocional {
+    padding: 30px 10px; /* Reduce aún más el padding */
+  }
+
+  .evolucion-emocional h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .comparacion {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 20px; /* Reduce el espacio entre las cajas */
+  }
+
+  .caja p {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  }
+
+  .imagen-emocion {
+    width: 90px; /* Ajusta el tamaño de la imagen */
+    height: 90px; /* Ajusta la altura */
+  }
+
+  .btn-explorar {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 8px 20px; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .evolucion-emocional {
+    padding: 20px 5px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .evolucion-emocional h1 {
+    font-size: 1.25rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .comparacion {
+    flex-direction: column; /* Mantiene la disposición en columna */
+    gap: 15px; /* Reduce el espacio entre las cajas */
+  }
+
+  .caja p {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .imagen-emocion {
+    width: 70px; /* Ajusta el tamaño de la imagen */
+    height: 70px; /* Ajusta la altura */
+  }
+
+  .btn-explorar {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 6px 15px; /* Ajusta el padding */
+  }
+}

@@ -1,0 +1,167 @@
+/* Crear */
+.crear {
+    text-align: center;
+    padding: 40px 100px;
+}
+
+.crear h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.crear p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.btn-crear {
+    font-family: "Nunito", sans-serif;
+  background: #da3e3e; /* Rojo cereza */
+  color: white; /* Texto blanco */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem; /* Altura reducida */
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none; /* Eliminar subrayado */
+}
+.btn-crear::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0)
+    );
+    transform: skewX(-20deg);
+    transition: left 0.5s ease-in-out;
+}
+.btn-crear:hover {
+    background-color: #b73131; /* Rojo más oscuro en hover */
+    box-shadow: 0 0.375rem 1rem rgba(218, 62, 62, 0.4);
+}
+.btn-crear:hover::before {
+    left: 100%;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .crear {
+    padding: 20px 50px; /* Reduce el padding */
+  }
+
+  .crear h2 {
+    font-size: 2rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .crear p {
+    font-size: 1.25rem; /* Reduce el tamaño del texto */
+  }
+
+  form {
+    max-width: 500px; /* Reduce el ancho máximo del formulario */
+  }
+
+  form label {
+    font-size: 0.9rem; /* Reduce el tamaño de las etiquetas */
+  }
+
+  form input, form textarea {
+    padding: 8px; /* Reduce el padding interno */
+  }
+
+  .btn-crear {
+    font-size: 0.9rem; /* Reduce el tamaño del botón */
+    padding: 0.4rem 1rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .crear {
+    padding: 15px 30px; /* Reduce aún más el padding */
+  }
+
+  .crear h2 {
+    font-size: 1.75rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .crear p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+
+  form {
+    max-width: 100%; /* Asegura que el formulario ocupe el ancho completo */
+  }
+
+  form label {
+    font-size: 0.8rem; /* Ajusta el tamaño de las etiquetas */
+  }
+
+  form input, form textarea {
+    padding: 6px; /* Reduce el padding interno */
+  }
+
+  .btn-crear {
+    font-size: 0.8rem; /* Ajusta el tamaño del botón */
+    padding: 0.3rem 0.8rem; /* Ajusta el padding */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .crear {
+    padding: 10px 20px; /* Reduce el padding para pantallas muy pequeñas */
+  }
+
+  .crear h2 {
+    font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+  }
+
+  .crear p {
+    font-size: 0.8rem; /* Reduce el tamaño del texto */
+  }
+
+  form label {
+    font-size: 0.7rem; /* Ajusta el tamaño de las etiquetas */
+  }
+
+  form input, form textarea {
+    padding: 5px; /* Reduce el padding interno */
+  }
+
+  .btn-crear {
+    font-size: 0.7rem; /* Ajusta el tamaño del botón */
+    padding: 0.2rem 0.6rem; /* Ajusta el padding */
+  }
+}
+

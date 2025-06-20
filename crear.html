@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Crear - Artea</title>
+    <link rel="stylesheet" href="style-navegacion.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-crear.css" />
+  </head>
+  <body>
+    <head>
+      <script src="components.js" defer></script>
+    </head>
+
+    <main>
+      <section class="crear">
+        <h2>Exprésate con Artea</h2>
+        <p>
+          "Cuéntanos tu idea para liberar emociones con arte y hacerla realidad"
+        </p>
+        <form>
+          <label for="nombre">Nombre Artístico</label>
+          <input type="text" id="nombre" placeholder="Tu nombre artístico" />
+
+          <label for="firma">¿Cómo te gustaría firmar tus creaciones?</label>
+          <input type="text" id="firma" placeholder="Firma" />
+
+          <label for="correo">Correo de contacto</label>
+          <input type="email" id="correo" placeholder="Tu correo" />
+
+          <label for="descripcion"
+            >Cuéntanos qué quieres dibujar, pintar o compartir</label
+          >
+          <textarea id="descripcion" placeholder="Tu idea"></textarea>
+
+          <a href="index.html" class="btn-crear" type="submit">Enviar</a>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

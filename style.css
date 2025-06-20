@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Fuente por defecto */
+  background-color: #f9f0e6; /* Color de fondo suave */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Ajusta el tamaño de fuente */
+  }
+
+  main {
+    padding: 20px; /* Reduce el padding */
+  }
+
+  .container {
+    width: 100%; /* Asegura que los contenedores ocupen el ancho completo */
+    padding: 10px; /* Reduce el padding */
+  }
+
+  .grid {
+    flex-direction: column; /* Cambia la disposición a columna */
+    gap: 15px; /* Reduce el espacio entre elementos */
+  }
+
+  .item {
+    width: 100%; /* Asegura que los elementos ocupen el ancho completo */
+  }
+}
+
+/* Responsive para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem; /* Reduce el tamaño de los encabezados */
+  }
+
+  button {
+    font-size: 1rem; /* Ajusta el tamaño de los botones */
+    padding: 0.5rem 1rem; /* Reduce el padding */
+  }
+
+  img {
+    height: auto; /* Ajusta la altura de la imagen */
+    max-width: 100%; /* Asegura que la imagen no desborde */
+  }
+
+  a {
+    font-size: 0.9rem; /* Reduce el tamaño de los enlaces */
+    padding: 5px; /* Ajusta el padding */
+  }
+}
